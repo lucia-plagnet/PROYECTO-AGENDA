@@ -1,0 +1,218 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url(FONDO5.jpg);
+  background-repeat: no-repeat;
+  max-width: auto;
+  max-height: auto;
+  background-size: cover;
+}
+
+.container {
+
+  max-width: 700px;
+  margin: 15px auto;
+  background-color: rgb(224, 186, 187);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ padding: 10px;
+}
+
+.container h1 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/*ESTILOS AÑADIR CONTACTOS*/
+.input-container {
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 5px;
+}
+
+.container .icon {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  color: rgb(104, 168, 176);
+}
+
+.input-container input {
+  width: 95%;
+  height: 25px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px rgb(104, 168, 176) solid;
+  outline: none;
+
+}
+
+
+.input-container button {
+  background-color: rgb(104, 168, 176);
+  font-size: 15px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.input-container button:hover {
+  background-color: rgb(22, 105, 117);
+}
+
+/*ESTILOS BUSCADOR DE CONTACTOS*/
+.search-container {
+  max-width: 80%;
+  margin: auto;
+  height: 0 80px;
+  display: flex;
+}
+.search-container input {
+  
+  border: 3px solid rgb(104, 168, 176);
+  border-radius: 50px;
+  width: 100%;
+  height: 25px;
+  outline: none;
+  margin-top: 20px;
+}
+
+
+.search-icon {
+  
+  margin-top: 28px;
+  margin-left: 10px;
+  color: rgb(22,105,117);
+  font-size: 20px;
+}
+
+
+/*estilo lista */
+.container-list, .container-list-search{
+  margin:auto;
+  width: 83%;
+ background-color: white;
+ border-radius: 5px;
+}
+
+.container-list{
+  
+  margin-bottom: 0px;
+}
+
+ul li{
+  list-style: none;
+  color: rgb(36, 138, 154);
+  width: 93%;
+  height: 40px;
+  padding: 0;
+  border-bottom: 2px solid rgb(216,167,166);
+  
+
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+ul li:hover{
+  
+ color: rgb(22,105,117);
+
+}
+
+
+
+.icon-container {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.fa-trash,
+.fa-eye {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fa-trash:hover,
+.fa-eye:hover {
+  transform: scale(1.5);
+}
+
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+
+
+
+
+/*estilo detalle de contacto*/
+
+
+.contact-detail {
+  position: fixed;
+  top: 50%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width:300px;
+  height: 350px;
+  border-radius: 20%; 
+  background-color:rgb(104,168,176);
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(217, 81, 140, 0.1);
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  gap: 15px;
+  align-items: center; 
+  color:white;
+ 
+}
+.contact-detail button{
+  border: none;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  font-size: 15px;
+   background-color: rgb(216,167,166);
+   color: white;
+   position: absolute;
+   bottom: 20px;
+
+} 
+.contact-detail button:hover{
+  background-color: white;
+   color:  rgb(216,167,166);
+   cursor: pointer;
+}
+.contact-detail h2 {
+  margin: 0; 
+  position: absolute;
+ top: 30px;
+}
+
